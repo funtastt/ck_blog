@@ -1,0 +1,13 @@
+
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>{{ object.title }}</h1>
+    <p>{{ object.content }}</p>
+    <p>Автор: {{ object.author.username }} | Создан: {{ object.created_at }}</p>
+    {% if user == object.author %}
+        <a href="{% url 'post_edit' object.pk %}">Редактировать</a>
+        <a href="{% url 'post_delete' object.pk %}">Удалить</a>
+    {% endif %}
+    <a href="{% url 'home' %}">Назад</a>
+{% endblock %}

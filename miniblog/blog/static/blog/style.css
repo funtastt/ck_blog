@@ -1,0 +1,35 @@
+/* static/blog/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+.post {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.post h2 {
+    margin: 0;
+}
+
+.post p {
+    margin: 5px 0;
+}

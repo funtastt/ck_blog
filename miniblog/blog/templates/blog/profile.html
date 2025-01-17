@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>Профиль пользователя</h1>
+    <p>Добро пожаловать, {{ user.username }}!</p>
+    <a href="{% url 'logout' %}">Выйти</a>
+{% endblock %}
